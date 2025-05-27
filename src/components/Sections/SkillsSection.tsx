@@ -35,7 +35,7 @@ const options = {
         color: '#ffffff',
         font: {
           size: 14,
-          weight: 'bold',
+          weight: 700
         },
       },
     },
