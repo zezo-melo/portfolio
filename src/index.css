@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-white text-black transition-colors duration-300;
+}
+
+/* Quando o dark estiver ativo na <html>, aplica isso no body */
+html.dark body {
+  @apply bg-zinc-900 text-lime-200;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id] {
+  scroll-margin-top: 100px; /* ou o valor que quiser, tipo 64px, 80px... */
+}

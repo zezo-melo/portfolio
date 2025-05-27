@@ -1,0 +1,10 @@
+/* Banner1.css */
+.parallax {
+    background-image: url(./bg-banner1.png);
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: cover;
+    height: 100vh; /* Garante que ocupe toda a altura da tela */
+    position: relative; /* Permite o posicionamento do conteúdo acima do fundo */
+  }
+  
