@@ -16,6 +16,8 @@ import ProjetoGrymDiary from '../../assets/grym-diary-project.png';
 import ProjetoClothStore from '../../assets/cloth-store-project.png';
 import ProjetoLPItau from '../../assets/itau-project.png';
 import LojaPalazzoBaby from '../../assets/loja-palazzo-baby.png';
+import bgProjects from '../../assets/bg-parallax-projects.png';
+
 
 const projects = [
   {
@@ -47,7 +49,11 @@ const projects = [
 
 const ProjectsPreview: React.FC = () => {
   return (
-    <section id="projects" className="bg-[url('src/assets/bg-parallax-projects.png')] bg-fixed bg-cover bg-center text-white py-16 px-6">
+      <section
+          id="projects"
+          className="bg-fixed bg-cover bg-center text-white py-16 px-6"
+          style={{ backgroundImage: `url(${bgProjects})` }}
+        >
       
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4">Meus Projetos</h2>
