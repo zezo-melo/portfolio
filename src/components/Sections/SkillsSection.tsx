@@ -37,7 +37,7 @@ const options: ChartOptions<'bar'> = {
         color: '#ffffff',
         font: {
           size: 14,
-          weight: 'bold', // ← precisa ser string literal
+          weight: 700,
         },
       },
     },
@@ -48,7 +48,7 @@ const options: ChartOptions<'bar'> = {
         color: '#ffffff',
         font: {
           size: 18,
-          weight: '700', // ← também string
+          weight: 700,
         },
       },
       grid: {
