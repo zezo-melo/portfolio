@@ -28,11 +28,11 @@ const Header: React.FC = () => {
       <div className="max-w-[1200px] mx-auto flex items-center justify-between">
         {/* Perfil */}
         <div className="flex items-center gap-3">
-          <div className="w-14 h-14 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">
+          <div className="w-28 h-28 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold mb-[-35px]">
             <img
               src={ProfilePhoto}
               alt="Foto de perfil"
-              className="w-14 h-14 rounded-full object-cover border-2 border-[#71a0e3] z-10"
+              className="w-27 h-27 rounded-full object-cover border-2 border-[#71a0e3] z-10"
             />
           </div>
           <div className="hidden sm:flex flex-col text-white text-xl font-bold tracking-wider">
@@ -44,11 +44,11 @@ const Header: React.FC = () => {
         {/* Menu Desktop */}
         <nav className="hidden md:block">
           <ul className="flex space-x-6 font-medium text-lg">
-            <li><a href="/" className="hover:text-lime-400 transition">{t('home')}</a></li>
-            <li><a href="#about" className="hover:text-lime-400 transition">{t('about')}</a></li>
-            <li><a href="#projects" className="hover:text-lime-400 transition">{t('projects')}</a></li>
-            <li><a href="#skills" className="hover:text-lime-400 transition">{t('skills')}</a></li>
-            <li><a href="#contact" className="hover:text-lime-400 transition">{t('contact')}</a></li>
+            <li><a href="/" className="hover:border-b-2 transition">{t('home')}</a></li>
+            <li><a href="#about" className="hover:border-b-2  transition">{t('about')}</a></li>
+            <li><a href="#projects" className="hover:border-b-2  transition">{t('projects')}</a></li>
+            <li><a href="#skills" className="hover:border-b-2  transition">{t('skills')}</a></li>
+            <li><a href="#contact" className="hover:border-b-2  transition">{t('contact')}</a></li>
           </ul>
         </nav>
 

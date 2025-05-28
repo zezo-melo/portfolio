@@ -13,6 +13,7 @@ import {
   Database,
   Terminal,
   Cpu,
+
 } from 'lucide-react'; // Adicionando ícones de Git, Database, Terminal, etc.
 
 const qualities = [
@@ -62,6 +63,22 @@ const technologies = [
   {
     icon: <Terminal size={40} />,
     label: 'Express',
+  },  
+  {
+    icon: <Cpu size={40} />,
+    label: 'Wordpress',
+  },  
+  {
+    icon: <Terminal size={40} />,
+    label: 'HTML',
+  },  
+  {
+    icon: <Code size={40} />,
+    label: 'CSS',
+  },  
+  {
+    icon: <Cpu size={40} />,
+    label: 'JS',
   },  
 ];
 

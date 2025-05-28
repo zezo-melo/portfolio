@@ -22,7 +22,7 @@ const Banner1: React.FC = () => {
       <section className="parallax text-white py-16 flex flex-col justify-center min-h-screen md:flex-row md:items-center w-full bg-cover bg-center bg-no-repeat">
 
 
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center w-full gap-10 pt-25">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center w-full gap-10 pt-25">
         
         {/* Texto */}
         <div className="flex flex-col md:max-w-[50%] w-full text-left">

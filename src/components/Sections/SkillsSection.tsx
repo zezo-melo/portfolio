@@ -80,7 +80,7 @@ const SkillsSection: React.FC = () => {
       style={{ backgroundImage: `url(${BgSkills})` }}
     >
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-12">Minhas Skills</h2>
+        <h2 className="text-3xl font-bold">Minhas Skills</h2>
 
         <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-8 mb-12">
           {/* Cards de skills se houverem no futuro */}
