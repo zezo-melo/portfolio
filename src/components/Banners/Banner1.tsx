@@ -38,7 +38,7 @@ const handleScroll = () => {
                 cursorStyle="|" 
                 typeSpeed={50}
                 deleteSpeed={1}
-                delaySpeed={1000}
+                delaySpeed={2000}
               />
             </span>
           </h1>
