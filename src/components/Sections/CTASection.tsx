@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const CTASection: React.FC = () => {
   return (
     <motion.div
-            initial={{ opacity: 0, x: -1200 }} 
+            initial={{ opacity: 0, x: -600 }} 
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.4, ease: 'easeOut' }}
             viewport={{ once: true }}
