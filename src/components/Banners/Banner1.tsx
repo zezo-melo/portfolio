@@ -5,13 +5,16 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const Banner1: React.FC = () => {
   // Movimento do fundo no scroll
-  const handleScroll = () => {
-    const parallaxElement = document.querySelector('.parallax') as HTMLElement;
-    const scrollPosition = window.pageYOffset;
-    if (parallaxElement) {
-      parallaxElement.style.backgroundPosition = `center ${scrollPosition * 0.5}px`;
-    }
-  };
+const handleScroll = () => {
+  // Desativa o parallax no mobile
+  if (window.innerWidth < 768) return;
+
+  const parallaxElement = document.querySelector('.parallax') as HTMLElement;
+  const scrollPosition = window.pageYOffset;
+  if (parallaxElement) {
+    parallaxElement.style.backgroundPosition = `center ${scrollPosition * 0.5}px`;
+  }
+};
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
