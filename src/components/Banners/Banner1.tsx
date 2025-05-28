@@ -25,7 +25,7 @@ const handleScroll = () => {
       <section className="parallax text-white py-16 flex flex-col justify-center min-h-screen md:flex-row md:items-center w-full bg-cover bg-center bg-no-repeat">
 
 
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center w-full gap-10 pt-15">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center w-full gap-10 pt-7">
         
         {/* Texto */}
           <div className="flex flex-col md:max-w-[50%] w-full text-left pl-6 pr-4 md:px-0">
