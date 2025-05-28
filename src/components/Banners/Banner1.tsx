@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import ElementBanner1 from './banner1-element.png';
 import './Banner1.css';
 import { Typewriter } from 'react-simple-typewriter';
+import { motion } from 'framer-motion';
 
 const Banner1: React.FC = () => {
   // Movimento do fundo no scroll
@@ -24,11 +25,18 @@ const handleScroll = () => {
   return (
       <section className="parallax text-white py-16 flex flex-col justify-center min-h-screen md:flex-row md:items-center w-full bg-cover bg-center bg-no-repeat">
 
-
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center w-full gap-10 pt-7">
         
+
         {/* Texto */}
+        
           <div className="flex flex-col md:max-w-[50%] w-full text-left pl-6 pr-4 md:px-0">
+            <motion.div
+            initial={{ opacity: 0, x: -50 }} 
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 3, ease: 'easeOut' }}
+            viewport={{ once: true }}
+          >
           <h1 className="text-[21px] md:text-4xl font-bold mb-6">
             <span className="bg-black px-2 py-1">
               <Typewriter 
@@ -53,15 +61,23 @@ const handleScroll = () => {
               Entrar em contato
             </a>
           </div>
+          </motion.div>
         </div>
 
         {/* Imagem */}
         <div className="md:max-w-[50%] w-full overflow-hidden flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 4, ease: 'easeOut' }}
+            viewport={{ once: true }}
+          >
           <img
             src={ElementBanner1}
             alt="Element image"
             className="w-full max-w-sm md:max-h-[450px] object-contain"
           />
+          </motion.div>
         </div>
       </div>
     </section>

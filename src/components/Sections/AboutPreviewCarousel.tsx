@@ -2,6 +2,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { motion } from 'framer-motion';
+
 
 import {
   Code,
@@ -86,11 +88,23 @@ const AboutPreviewCarousel = () => {
   return (
     <section id="about" className="bg-gray-800 text-white py-16 px-4">
       <div className="max-w-5xl mx-auto text-center">
+        <motion.div
+            initial={{ opacity: 0, x: 0 }} 
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2, ease: 'easeOut' }}
+            viewport={{ once: true }}
+          >
         <h2 className="text-3xl sm:text-4xl font-bold mb-10">Sobre mim</h2>
         <p className="text-xl sm:text-xl font-md mb-10">
         Sou desenvolvedor web com 5 anos de experiência, focado em front-end. Já desenvolvi, participei e liderei diversos projetos, propondo soluções com tecnologias variadas. Atualmente, estou me aprofundando em back-end para atuar como desenvolvedor fullstack.
         </p>
-
+        
+        <motion.div
+            initial={{ opacity: 0, y: 80 }} 
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, ease: 'easeOut' }}
+            viewport={{ once: true }}
+          >
         <Swiper
           modules={[Navigation, Autoplay]}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
@@ -125,8 +139,10 @@ const AboutPreviewCarousel = () => {
                 <span className="text-lg font-medium">{tech.label}</span>
               </div>
             </SwiperSlide>
-          ))}
+
+        ))}
         </Swiper>
+        </motion.div>
 
         <div className="mt-10">
           <a
@@ -136,6 +152,8 @@ const AboutPreviewCarousel = () => {
             Saiba mais
           </a>
         </div>
+    </motion.div>
+
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Bar } from 'react-chartjs-2';
+import { motion } from 'framer-motion';
 import {
   Chart as ChartJS,
   BarElement,
@@ -74,6 +75,12 @@ const options: ChartOptions<'bar'> = {
 
 const SkillsSection: React.FC = () => {
   return (
+    <motion.div
+            initial={{ opacity: 0, x: 0 }} 
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, ease: 'easeOut' }}
+            viewport={{ once: true }}
+          >
     <section
       id="skills"
       className="text-white py-16 px-6 bg-cover bg-center bg-fixed"
@@ -103,6 +110,7 @@ const SkillsSection: React.FC = () => {
         </div>
       </div>
     </section>
+    </motion.div>
   );
 };
 

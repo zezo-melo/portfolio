@@ -1,10 +1,18 @@
 import React from 'react';
 import { FaWhatsapp, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { IoMailOutline } from 'react-icons/io5';
+import { motion } from 'framer-motion';
+
 
 const Footer: React.FC = () => {
   return (
     <footer id="contact" className="bg-[#101828] text-white py-12 px-6">
+      <motion.div
+            initial={{ opacity: 0, y: 0 }} 
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, ease: 'easeOut' }}
+            viewport={{ once: true }}
+          >
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         <h3 className="text-2xl font-semibold mb-6">Entre em contato</h3>
         <div className="flex gap-6 mb-4">
@@ -47,6 +55,7 @@ const Footer: React.FC = () => {
           <p>© {new Date().getFullYear()} Roberto Melo. Todos os direitos reservados.</p>
         </div>
       </div>
+    </motion.div>
     </footer>
   );
 };

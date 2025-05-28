@@ -1,7 +1,15 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+
 
 const CTASection: React.FC = () => {
   return (
+    <motion.div
+            initial={{ opacity: 0, x: -1200 }} 
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.4, ease: 'easeOut' }}
+            viewport={{ once: true }}
+          >
     <section className="bg-gradient-to-r from-gray-900 to-black text-white py-18">
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-6">
         <h3 className="text-xl md:text-2xl font-semibold">
@@ -25,6 +33,7 @@ const CTASection: React.FC = () => {
         </div>
       </div>
     </section>
+    </motion.div>
   );
 };
 

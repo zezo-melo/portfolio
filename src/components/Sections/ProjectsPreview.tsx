@@ -2,6 +2,10 @@ import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import framer motion
+import { motion } from 'framer-motion';
+
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -54,7 +58,12 @@ const ProjectsPreview: React.FC = () => {
           className="bg-fixed bg-cover bg-center text-white py-16 px-6"
           style={{ backgroundImage: `url(${bgProjects})` }}
         >
-      
+      <motion.div
+            initial={{ opacity: 0, x: 0 }} 
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2, ease: 'easeOut' }}
+            viewport={{ once: true }}
+          >
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4">Meus Projetos</h2>
         <h3 className="text-xl mb-12">Clique para acessar o projeto no ar!</h3>
@@ -136,6 +145,7 @@ const ProjectsPreview: React.FC = () => {
           </a>
         </div>
       </div>
+      </motion.div>
     </section>
   );
 };

@@ -4,6 +4,8 @@ import ProfilePhoto from '../../assets/Profile-photo.png';
 import BrazilFlag from '../../assets/flags/BrazilFlag.tsx';
 import EUAFlag from '../../assets/flags/EUAFlag.tsx';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+
 
 const Header: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -24,7 +26,14 @@ const Header: React.FC = () => {
   }, [darkMode]);
 
   return (
+    
     <header className="bg-[#000c1b] dark:bg-gray-900 text-white px-6 py-4 shadow-md fixed top-0 left-0 w-full z-50">
+      <motion.div
+            initial={{ opacity: 0, x: 0 }} 
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2, ease: 'easeOut' }}
+            viewport={{ once: true }}
+          >
       <div className="max-w-[1200px] mx-auto flex items-center justify-between">
         {/* Perfil */}
         <div className="flex items-center gap-3">
@@ -90,6 +99,7 @@ const Header: React.FC = () => {
           </ul>
         </div>
       )}
+      </motion.div>
     </header>
   );
 };
