@@ -27,8 +27,8 @@ const Header: React.FC = () => {
     <header className="bg-[#000c1b] dark:bg-gray-900 text-white px-6 py-4 shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-[1200px] mx-auto flex items-center justify-between">
         {/* Perfil */}
-        <div className="flex items-center gap-3">
-          <div className="w-25 h-25 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold mb-[-35px]">
+        <div className="flex items-center gap-2 sm:gap-3 w-full max-w-[220px]"></div>
+          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold mb-[-30px] sm:mb-[-35px] shrink-0">
             <img
               src={ProfilePhoto}
               alt="Foto de perfil"
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
             </div>
 
             {/* Mobile */}
-            <div className="flex sm:hidden flex-col text-white text-sm font-semibold tracking-tight">
+            <div className="flex sm:hidden flex-col text-white text-sm font-semibold tracking-tight flex-1 leading-tight">
               <span>{t('developer')}</span>
               <span>Roberto Melo</span>
             </div>
