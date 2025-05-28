@@ -28,7 +28,7 @@ const handleScroll = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center w-full gap-10 pt-15">
         
         {/* Texto */}
-          <div className="flex flex-col md:max-w-[50%] w-full text-left px-6 md:px-0">
+          <div className="flex flex-col md:max-w-[50%] w-full text-left pl-6 pr-4 md:px-0">
           <h1 className="text-[21px] md:text-4xl font-bold mb-6">
             <span className="bg-black px-2 py-1">
               <Typewriter 

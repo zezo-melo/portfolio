@@ -80,7 +80,7 @@ const Header: React.FC = () => {
 
       {/* Menu Mobile */}
       {menuOpen && (
-        <div className="md:hidden bg-[#000c1b] dark:bg-gray-900 text-white px-6 py-4">
+        <div className="md:hidden bg-[#000c1b] dark:bg-gray-900 text-white px-6 pt-15 pb-4">
           <ul className="flex flex-col space-y-4 text-lg">
             <li><a href="/" onClick={() => setMenuOpen(false)}>{t('home')}</a></li>
             <li><a href="#about" onClick={() => setMenuOpen(false)}>{t('about')}</a></li>
