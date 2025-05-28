@@ -28,11 +28,11 @@ const Header: React.FC = () => {
       <div className="max-w-[1200px] mx-auto flex items-center justify-between">
         {/* Perfil */}
         <div className="flex items-center gap-3">
-          <div className="w-28 h-28 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold mb-[-35px]">
+          <div className="w-25 h-25 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold mb-[-35px]">
             <img
               src={ProfilePhoto}
               alt="Foto de perfil"
-              className="w-27 h-27 rounded-full object-cover border-2 border-[#71a0e3] z-10"
+              className="w-24 h-24 rounded-full object-cover border-2 border-[#71a0e3] z-10"
             />
           </div>
           {/* Desktop */}
