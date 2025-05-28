@@ -35,10 +35,17 @@ const Header: React.FC = () => {
               className="w-27 h-27 rounded-full object-cover border-2 border-[#71a0e3] z-10"
             />
           </div>
-          <div className="hidden sm:flex flex-col text-white text-xl font-bold tracking-wider">
-            <span>{t('developer')}</span>
-            <span>Roberto Melo</span>
-          </div>
+          {/* Desktop */}
+            <div className="hidden sm:flex flex-col text-white text-xl font-bold tracking-wider">
+              <span>{t('developer')}</span>
+              <span>Roberto Melo</span>
+            </div>
+
+            {/* Mobile */}
+            <div className="flex sm:hidden flex-col text-white text-sm font-semibold tracking-tight">
+              <span>{t('developer')}</span>
+              <span>Roberto Melo</span>
+            </div>
         </div>
 
         {/* Menu Desktop */}
