@@ -7,13 +7,15 @@ import {
   LinearScale,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  ChartOptions,
+  ChartData
 } from 'chart.js';
 import BgSkills from '../../assets/bg-parallax-skills.png';
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Title, Tooltip, Legend);
 
-const data = {
+const data: ChartData<'bar'> = {
   labels: ['React', 'NestJS', 'MongoDB', 'TailwindCSS', 'Git'],
   datasets: [
     {
@@ -26,16 +28,16 @@ const data = {
   ],
 };
 
-const options = {
+const options: ChartOptions<'bar'> = {
   responsive: true,
-  maintainAspectRatio: false, // ← permite controlar altura manualmente
+  maintainAspectRatio: false,
   plugins: {
     legend: {
       labels: {
         color: '#ffffff',
         font: {
           size: 14,
-          weight: 700
+          weight: 'bold', // ← precisa ser string literal
         },
       },
     },
@@ -46,7 +48,7 @@ const options = {
         color: '#ffffff',
         font: {
           size: 18,
-          weight: '700',
+          weight: '700', // ← também string
         },
       },
       grid: {
@@ -73,7 +75,7 @@ const options = {
 const SkillsSection: React.FC = () => {
   return (
     <section
-      id='skills'
+      id="skills"
       className="text-white py-16 px-6 bg-cover bg-center bg-fixed"
       style={{ backgroundImage: `url(${BgSkills})` }}
     >
