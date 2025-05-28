@@ -27,25 +27,18 @@ const Header: React.FC = () => {
     <header className="bg-[#000c1b] dark:bg-gray-900 text-white px-6 py-4 shadow-md fixed top-0 left-0 w-full z-50">
       <div className="max-w-[1200px] mx-auto flex items-center justify-between">
         {/* Perfil */}
-        <div className="flex items-center gap-2 sm:gap-3 w-full max-w-[220px]"></div>
-          <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold mb-[-30px] sm:mb-[-35px] shrink-0">
+        <div className="flex items-center gap-3">
+          <div className="w-28 h-28 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold mb-[-35px]">
             <img
               src={ProfilePhoto}
               alt="Foto de perfil"
-              className="w-24 h-24 rounded-full object-cover border-2 border-[#71a0e3] z-10"
+              className="w-27 h-27 rounded-full object-cover border-2 border-[#71a0e3] z-10"
             />
           </div>
-          {/* Desktop */}
-            <div className="hidden sm:flex flex-col text-white text-xl font-bold tracking-wider">
-              <span>{t('developer')}</span>
-              <span>Roberto Melo</span>
-            </div>
-
-            {/* Mobile */}
-            <div className="flex sm:hidden flex-col text-white text-sm font-semibold tracking-tight flex-1 leading-tight">
-              <span>{t('developer')}</span>
-              <span>Roberto Melo</span>
-            </div>
+          <div className="hidden sm:flex flex-col text-white text-xl font-bold tracking-wider">
+            <span>{t('developer')}</span>
+            <span>Roberto Melo</span>
+          </div>
         </div>
 
         {/* Menu Desktop */}
@@ -87,7 +80,7 @@ const Header: React.FC = () => {
 
       {/* Menu Mobile */}
       {menuOpen && (
-        <div className="md:hidden bg-[#000c1b] dark:bg-gray-900 text-white px-6 pt-15 pb-4">
+        <div className="md:hidden bg-[#000c1b] dark:bg-gray-900 text-white px-6 pt-15 pb-5">
           <ul className="flex flex-col space-y-4 text-lg">
             <li><a href="/" onClick={() => setMenuOpen(false)}>{t('home')}</a></li>
             <li><a href="#about" onClick={() => setMenuOpen(false)}>{t('about')}</a></li>
