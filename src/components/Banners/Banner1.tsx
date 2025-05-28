@@ -41,7 +41,7 @@ const Banner1: React.FC = () => {
           </p>
           <div className="mt-4 md:mt-10">
             <a
-              href="#contato"
+              href="#contact"
               className="text-lg md:text-2xl inline-block px-6 py-3 border hover:bg-white text-white hover:text-black rounded-full font-medium transition"
             >
               Entrar em contato
