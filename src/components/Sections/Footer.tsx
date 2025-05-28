@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             <IoMailOutline />
           </a>
           <a
-            href="https://linkedin.com/in/robertomelo"
+            href="https://linkedin.com/in/robertofmelo"
             target="_blank"
             rel="noopener noreferrer"
             className="text-3xl hover:text-blue-500 transition"
