@@ -17,7 +17,7 @@ Este é o meu portfólio pessoal, desenvolvido com o objetivo de apresentar minh
 
 ## 📸 Preview
 
-
+![WhatsApp Image 2025-05-29 at 09 11 10](https://github.com/user-attachments/assets/d64e03e7-46f0-4403-a93d-d54f6bfc2a45)
 
 ## 🚀 Funcionalidades
 
