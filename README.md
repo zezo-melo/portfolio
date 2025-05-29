@@ -10,7 +10,7 @@ Este é o meu portfólio pessoal, desenvolvido com o objetivo de apresentar minh
 - **Chart.js** para gráficos de habilidades
 - **SwiperJS** para carrosséis
 - **React Simple Typewriter** para animação no banner
-- **i18next** para internacionalização
+- **i18next** para internacionalização de linguas
 - **React Icons** para uso de icones
 - **Framer Motion** para animações
 - **Vercel** para deploy
