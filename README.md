@@ -11,7 +11,8 @@ Este é o meu portfólio pessoal, desenvolvido com o objetivo de apresentar minh
 - **SwiperJS** para carrosséis
 - **React Simple Typewriter** para animação no banner
 - **i18next** para internacionalização
-- **React Icons** para ícones sociais
+- **React Icons** para animações
+- **Framer Motion** para deploy
 - **Vercel** para deploy
 
 ## 📸 Preview
