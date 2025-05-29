@@ -2,6 +2,8 @@
 
 Este é o meu portfólio pessoal, desenvolvido com o objetivo de apresentar minhas habilidades técnicas, projetos realizados e formas de contato. A aplicação é moderna, responsiva e multilíngue, com suporte a modo escuro.
 
+Publicado em: [https://portfolio-robertthowns-projects.vercel.app/](https://portfolio-robertthowns-projects.vercel.app/)
+
 ## 🛠 Tecnologias Utilizadas
 
 - **React** com TypeScript
@@ -46,12 +48,6 @@ npm install
 # Rode o projeto
 npm run dev
 ```
-
-## 🖥️ Deploy
-
-Repositório hospedado em: [(https://github.com/zezo-melo/portfolio/)](https://github.com/zezo-melo/portfolio/)
-
-Publicado em: 
 
 ## 📫 Contato
 [LinkedIn](https://www.linkedin.com/in/robertofmelo/)
