@@ -12,7 +12,7 @@ Este é o meu portfólio pessoal, desenvolvido com o objetivo de apresentar minh
 - **React Simple Typewriter** para animação no banner
 - **i18next** para internacionalização
 - **React Icons** para ícones sociais
-- **GitHub Pages** ou Vercel para deploy
+- **Vercel** para deploy
 
 ## 📸 Preview
 
