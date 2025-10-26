@@ -21,9 +21,59 @@ import ProjetoClothStore from '../../assets/cloth-store-project.png';
 import ProjetoLPItau from '../../assets/itau-project.png';
 import LojaPalazzoBaby from '../../assets/loja-palazzo-baby.png';
 import bgProjects from '../../assets/bg-parallax-projects.png';
+import AgenciaTerraCota from '../../assets/agencia_terra_cota.png'
+import CasaAerada from '../../assets/casaaerada.png'
+import Cenarios from '../../assets/cenarios.png'
+import Neurion from '../../assets/instituto_neurion.png'
+import PNVS from '../../assets/PNVS.png'
 
 
 const projects = [
+  {
+    title: (
+      <>
+        PNVS - UNB
+      </>
+    ),
+    image: PNVS,
+    link: 'http://pnvs.unb.br',
+  },
+  {
+    title: (
+      <>
+        Cenários - UNB
+      </>
+    ),
+    image: Cenarios,
+    link: 'https://cenarios.unb.br',
+  },
+  {
+    title: (
+      <>
+        Agência - TerraCota
+      </>
+    ),
+    image: AgenciaTerraCota,
+    link: 'https://agenciaterracota61.com',
+  },
+  {
+    title: (
+      <>
+        CasaAerada 
+      </>
+    ),
+    image: CasaAerada,
+    link: 'https://casaaerada.com.br',
+  },
+  {
+    title: (
+      <>
+        Instituto Neurion
+      </>
+    ),
+    image: Neurion,
+    link: 'https://institutoneurion.com.br',
+  },
   {
     title: 'Loja - Palazzo Baby - Freela',
     image: LojaPalazzoBaby,
