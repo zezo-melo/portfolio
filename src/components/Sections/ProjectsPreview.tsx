@@ -25,7 +25,7 @@ import AgenciaTerraCota from '../../assets/agencia_terra_cota.png'
 import CasaAerada from '../../assets/casaaerada.png'
 import Cenarios from '../../assets/cenarios.png'
 import Neurion from '../../assets/instituto_neurion.png'
-import PNVS from '../../assets/PNVS.png'
+import PNVS from '../../assets/pnvs.png'
 
 
 const projects = [
